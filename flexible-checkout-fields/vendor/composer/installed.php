@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'wpdesk/flexible-checkout-fields',
-        'pretty_version' => '4.1.2',
-        'version' => '4.1.2.0',
-        'reference' => '6f11401c64b4a7de39232047cd9cef2a25b3d05c',
+        'pretty_version' => '4.1.3',
+        'version' => '4.1.3.0',
+        'reference' => '20fdeb4b68f48935ce453c50745cbcdf687de51c',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -38,9 +38,9 @@
             'dev_requirement' => false,
         ),
         'wpdesk/flexible-checkout-fields' => array(
-            'pretty_version' => '4.1.2',
-            'version' => '4.1.2.0',
-            'reference' => '6f11401c64b4a7de39232047cd9cef2a25b3d05c',
+            'pretty_version' => '4.1.3',
+            'version' => '4.1.3.0',
+            'reference' => '20fdeb4b68f48935ce453c50745cbcdf687de51c',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

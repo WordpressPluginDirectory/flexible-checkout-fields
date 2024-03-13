@@ -173,6 +173,9 @@ abstract class OptionAbstract implements OptionInterface {
 			case self::FIELD_TYPE_SELECT:
 				return $this->sanitize_select( $field_value );
 			case self::FIELD_TYPE_SELECT_MULTI:
+				if ( ! is_array( $field_value ) ) {
+					$field_value = [];
+				}
 				return $this->sanitize_select_multi( $field_value );
 			case self::FIELD_TYPE_CHECKBOX_LIST:
 			case self::FIELD_TYPE_GROUP:
@@ -202,14 +205,10 @@ abstract class OptionAbstract implements OptionInterface {
 	/**
 	 * Sanitizes the input value for multi select fields.
 	 *
-	 * @param mixed $field_value The field value to be sanitized.
-	 * @return array<string, string> The sanitized field value.
+	 * @param array<int, string> $field_value The field value to be sanitized.
+	 * @return array<int, string> The sanitized field value.
 	 */
-	private function sanitize_select_multi( mixed $field_value ): array {
-		if ( ! is_array( $field_value ) ) {
-			$field_value = [];
-		}
-
+	private function sanitize_select_multi( array $field_value ): array {
 		foreach ( $field_value as $value_index => $value ) {
 			$field_value[ $value_index ] = \sanitize_text_field( \wp_unslash( $value ) );
 		}
