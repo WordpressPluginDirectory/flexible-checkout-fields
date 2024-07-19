@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInitf71cf4507d15590533b13cf45ff90f93
+class ComposerStaticInit52c9764f515b23e9da7aeeef539cddff
 {
     public static $prefixLengthsPsr4 = array (
         'W' => 
@@ -407,6 +407,7 @@ class ComposerStaticInitf71cf4507d15590533b13cf45ff90f93
         'WPDesk\\FCF\\Free\\Field\\Type\\Wc\\WcStateType' => __DIR__ . '/../..' . '/src/Field/Type/Wc/WcStateType.php',
         'WPDesk\\FCF\\Free\\Field\\Types' => __DIR__ . '/../..' . '/src/Field/Types.php',
         'WPDesk\\FCF\\Free\\Form\\Assets' => __DIR__ . '/../..' . '/src/Form/Assets.php',
+        'WPDesk\\FCF\\Free\\Form\\FormModifier' => __DIR__ . '/../..' . '/src/Form/FormModifier.php',
         'WPDesk\\FCF\\Free\\Integration\\Field' => __DIR__ . '/../..' . '/src/Integration/Field.php',
         'WPDesk\\FCF\\Free\\Integration\\FieldInterface' => __DIR__ . '/../..' . '/src/Integration/FieldInterface.php',
         'WPDesk\\FCF\\Free\\Integration\\Fields' => __DIR__ . '/../..' . '/src/Integration/Fields.php',
@@ -538,9 +539,9 @@ class ComposerStaticInitf71cf4507d15590533b13cf45ff90f93
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInitf71cf4507d15590533b13cf45ff90f93::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInitf71cf4507d15590533b13cf45ff90f93::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInitf71cf4507d15590533b13cf45ff90f93::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit52c9764f515b23e9da7aeeef539cddff::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit52c9764f515b23e9da7aeeef539cddff::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit52c9764f515b23e9da7aeeef539cddff::$classMap;
 
         }, null, ClassLoader::class);
     }
